@@ -3,7 +3,7 @@ const app = express();
 require("dotenv").config();
 var cors = require('cors')
 app.use(cors())
-const port = 8000;
+
 // requiring the jsn for getting data from the body this is have to be in the top level 
 app.use(express.json())
 
@@ -49,6 +49,6 @@ app.get("/about",middlewares,(req,res)=>{
 
 
 //Running the server on the port
-app.listen(process.env.PORT || 8000 ,()=>{
+app.listen( process.env.PORT || 8000 ,()=>{
     console.log("serveer is running on port 8000")
 })
