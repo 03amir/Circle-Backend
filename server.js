@@ -28,6 +28,6 @@ app.get("/", (req, res) => {
 });
 
 //Running the server on the port
-app.listen( process.env.PORT || 8000, () => {
+app.listen( 8000, () => {//deleted the process.env port variable;
   console.log("serveer is running on port 8000");
 });
